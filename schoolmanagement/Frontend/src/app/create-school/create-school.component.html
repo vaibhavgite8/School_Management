@@ -1,0 +1,39 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Add School </h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label> School Name</label>
+            <input type="text" class="form-control" id="schoolName" [(ngModel)]=" school.schoolName" name="schoolName">
+        </div>
+
+        <div class="form-group">
+            <label> School Location</label>
+            <input type="text" class="form-control" id="schoolLocation" [(ngModel)]="school.schoolLocation"
+                name="schoolLocation">
+        </div>
+        <div class="form-group">
+            <label> School RegNo</label>
+            <input type="text" class="form-control" id="schoolRegno" [(ngModel)]="school.schoolRegno"
+                name="schoolRegno">
+        </div>
+        <div class="form-group">
+            <label> No Of Students</label>
+            <input type="text" class="form-control" id="noOfStudents" [(ngModel)]="school.noOfStudents"
+                name="noOfStudents">
+        </div>
+        <div class="form-group">
+            <label> No Of Teachers</label>
+            <input type="text" class="form-control" id="noOfTeachers" [(ngModel)]="school.noOfTeachers"
+                name="noOfTeachers">
+        </div>
+        <div class="form-group">
+            <label> School MailId</label>
+            <input type="text" class="form-control" id="schoolMailId" [(ngModel)]="school.schoolMailId"
+                name="schoolMailId">
+        </div>
+
+
+        <button class="btn btn-success" type="submit">Submit</button>
+
+</form>
+</div>

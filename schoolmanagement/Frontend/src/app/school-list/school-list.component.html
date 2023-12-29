@@ -1,0 +1,33 @@
+<h2> School List </h2>
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th> School Regno</th>
+            <th> School Name</th>
+            <th> School Location</th>
+            <th> noOfTeachers</th>
+            <th> noOfStudents </th>
+            <th> School Email Id</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let schools of School">
+            <td>{{schools.schoolRegno}}</td>
+            <td>{{schools.schoolName}}</td>
+            <td>{{schools.schoolLocation}}</td>
+            <td> {{schools.noOfTeachers}}</td>
+            <td>{{schools.noOfStudents}}</td>
+            <td>{{schools.schoolMailId}}</td>
+
+            <td>
+                <button (click)="updateSchool(schools.schoolRegno)" class="btn btn-info"> Update</button>
+                <button (click)=" deleteSchool(schools.schoolRegno)" class="btn btn-danger" style="margin-left: 10px">
+                    Delete</button>
+
+                <button (click)="SchoolDetails(schools.schoolRegno)" class="btn btn-danger" style="margin-left: 10px">
+                    View </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
